@@ -18,7 +18,7 @@ export default function Chat() {
   const { nameUser } = useContext(ChatContext);
 
   const navigate = useNavigate();
-  const socket = io('http://localhost:3001');
+  const socket = io('https://psychotic-carriage-production.up.railway.app/');
   
   useEffect(()=> {
     const getChat = async () => {
